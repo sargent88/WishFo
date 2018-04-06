@@ -1,0 +1,15 @@
+form.p-4 {
+    width: 15em !important;
+}
+
+form:hover {
+    background-color: #ffffff !important;
+}
+
+label {
+    color: #000000 !important;
+}
+
+button.navbar-toggler:focus {
+    outline:0;
+}

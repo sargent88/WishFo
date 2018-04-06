@@ -1,0 +1,35 @@
+<!-- <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" alt="First slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]" alt="Second slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" alt="Third slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[3]" alt="Fourth slide">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[4]" alt="Fifth slide">
+    </ng-template>
+  </ngb-carousel> -->
+
+  <ngb-carousel>
+      <ng-template ngbSlide>
+        <img src="{{ car.photo_front }}" alt="First slide">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="{{ car.photo_back }}" alt="Second slide">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="{{ car.photo_side }}]" alt="Third slide">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="{{ car.photo_inside_front }}" alt="Fourth slide">
+      </ng-template>
+      <ng-template ngbSlide>
+        <img src="{{ car.photo_inside_back }}" alt="Fifth slide">
+      </ng-template>
+    </ngb-carousel>

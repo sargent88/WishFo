@@ -1,0 +1,17 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background-color: #f5f5f5;
+}
+
+.fa {
+    font-size: 1.5em;
+    color: #DC3545;
+    text-decoration: none;    /* color: #C82333; */
+}
+
+.fa:hover {
+    color: #C82333;
+}

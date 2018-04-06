@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+  
+  <a class="navbar-brand" href="/">
+    <img src="" width="30" height="30" class="d-inline-block align-top" alt="WishFo">
+  </a>
+
+  <button (click)="toggleCollapse()" class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="oi" [class.oi-menu]="!show" [class.oi-x]="show"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [class.show]="show" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li routerLinkActive="active current" class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li routerLinkActive="active current" class="nav-item">
+        <a class="nav-link" routerLink="/cars">Cars</a>
+      </li>
+      <li routerLinkActive="active current" class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item dropdown" ngbDropdown>
+        <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbDropdownToggle>
+            Admin
+          </button> 
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown" ngbDropdownMenu>
+          <form class="dropdown-item p-4">
+            <div class="form-group">
+              <label for="exampleDropdownFormEmail2">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleDropdownFormPassword2">Password</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+              <label class="form-check-label" for="dropdownCheck2">
+                Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-outline-danger">Sign in</button>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+</nav>
