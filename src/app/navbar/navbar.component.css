@@ -11,5 +11,5 @@ label {
 }
 
 button.navbar-toggler:focus {
-    outline:0;
+    outline-color: transparent !important;
 }
